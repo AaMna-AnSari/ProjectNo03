@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5d0c9;
+}
+body.active{
+    background-color: black;
+}
+.para{
+    color: rgb(241, 246, 250);
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    width: 50%;
+    height: 50vh;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rectangle {
+    width: 60%;
+    height: 30vh;
+    background-image: url('./morning.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40%; 
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-image 0.5s; /* Add transition for smooth background image change */
+
+}
+#rectangle.active{
+    background-image: url(./night1.jpg);
+}
+
+#circle {
+    width: 40%;
+    height: 20vh;
+    background-color: rgb(249, 210, 184);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.5s, transform 0.5s; /* Add transition for smooth background color change and circle movement */
+    cursor: pointer;
+    position: relative;
+}
+#circle.active{
+    left:240px;
+    background-color: #ACAFE6;
+}
+
+#circle:hover {
+    background-color: #ACAFE6; /* Add hover background color */
+    
+}
+
