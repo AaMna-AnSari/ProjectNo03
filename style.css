@@ -30,7 +30,7 @@ body.active{
     background-image: url('./morning.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 40%; 
+    border-radius: 41%; 
     position: relative;
     display: flex;
     justify-content: flex-start;
